@@ -15,13 +15,13 @@ Promise.all(promises)
   // Handle errors here
 });
 
-function execHttpRequest(i: number): Promise<void>
+function execHttpRequest(i: number): Promise<number>
 {
     return new Promise((resolve, reject) => { 
         axios.get('https://www.google.com')
         .then(response => {
-            console.log(response.status);
-            //resolve();
+            console.log(response.status, i);
+            resolve(response.data);
             //resolve(response);
         })
         .catch(error => {
