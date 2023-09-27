@@ -19,6 +19,7 @@
   "homepage": "https://github.com/mitzen/node-thread-intro#readme",
   "dependencies": {
     "@types/node": "^20.7.0",
+    "axios": "^1.5.1",
     "dotenv": "^16.3.1",
     "request": "^2.88.2"
   },
